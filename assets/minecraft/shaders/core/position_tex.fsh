@@ -18,7 +18,8 @@ void main() {
     if(isPano > 0) {
         if(isPano == 2) discard;
         // modified to work on 1.21.5
-        // ScreenSize and GameTime is calculated because using the uniform is unstable (if youre reading this, you should vote for MC-296043 on the bug tracker)
+        // ScreenSize and GameTime is calculated because using the uniform is unstable
+        // (if youre reading this, you should vote for MC-296043 on the minecraft bug tracker)
         vec2 ScreenPos = (glPos.xy / glPos.w) * 0.5 + 0.5;
         vec2 ScreenSize = round(gl_FragCoord.xy / ScreenPos);
         float GameTime = -(rot / 6.2831853) / 1.7;

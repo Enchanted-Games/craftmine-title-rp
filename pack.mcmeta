@@ -3,14 +3,12 @@
     "pack_format": 55,
     "description": [
       "",
+      {"text":"2","color":"#ffffff"},{"text":"5","color":"#ebf2eb"},{"text":"w","color":"#d7e6d7"},{"text":"1","color":"#c4dac4"},{"text":"4","color":"#b0ceb0"},{"text":"c","color":"#9cc19c"},{"text":"r","color":"#89b589"},{"text":"a","color":"#75a975"},{"text":"f","color":"#629d62"},{"text":"t","color":"#4e904e"},{"text":"m","color":"#3a843a"},{"text":"i","color":"#277827"},{"text":"n","color":"#136c13"},{"text":"e","color":"#006000"},
+      {"text":" T","color":"#ffffff"},{"text":"i","color":"#bfd7bf"},{"text":"t","color":"#7faf7f"},{"text":"l","color":"#3f873f"},{"text":"e","color":"#006000"},
+      {"text":" S","color":"#ffffff"},{"text":"c","color":"#ccdfcc"},{"text":"r","color":"#99bf99"},{"text":"e","color":"#669f66"},{"text":"e","color":"#337f33"},{"text":"n","color":"#006000"},
+      "\n",
       {
-        "text": "v0.0"
-      },
-      {
-        "text": " | "
-      },
-      {
-        "text": "by Enchanted_Games"
+        "text": "v1.0 | by Enchanted_Games"
       }
     ]
   }

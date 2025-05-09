@@ -1,5 +1,8 @@
 #version 150
 
+#moj_import <eg_craftmine_title:util.glsl>
+#moj_import <eg_craftmine_title:global_defines.glsl>
+
 uniform sampler2D Sampler0;
 
 in vec3 Position;
@@ -13,12 +16,7 @@ out float rot;
 out vec4 glPos;
 flat out int isPano;
 
-bool rougheq(vec4 color, vec4 target) {
-    return all(lessThan(abs(color-target),vec4(0.001)));
-}
-
 vec2 CORNERS[4] = vec2[4](vec2(1, -1), vec2(1, 1), vec2(-1, 1), vec2(-1, -1));
-#define MARKER_PIXEL_COLOUR vec4(1.0, 0.32157, 0.68235, 0.45098)
 
 void main() {
     texCoord0 = UV0;

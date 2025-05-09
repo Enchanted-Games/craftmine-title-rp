@@ -2,6 +2,7 @@
 
 #moj_import <minecraft:globals.glsl>
 #moj_import <eg_craftmine_title:util.glsl>
+#moj_import <eg_craftmine_title:global_defines.glsl>
 
 uniform samplerCube Sampler0;
 
@@ -19,7 +20,11 @@ vec4 sampleCodeTexture(vec2 uv) {
 #moj_import <eg_craftmine_title:craftmine_effect.glsl>
 
 void main() {
-    float panoTime = -(rot / 6.2831853) / 1.7;
+    if(rougheq(sampleCodeTexture(vec2(0, 0.999)).rgb, MARKER_PIXEL_COLOUR.rgb)) {
+        float panoTime = -(rot / 6.2831853) / 1.7;
+        fragColor = drawCraftmineEffect(ScreenSize, panoTime);
+        return;
+    }
 
-    fragColor = drawCraftmineEffect(ScreenSize, panoTime);
+    fragColor = texture(Sampler0, texCoord0);
 }

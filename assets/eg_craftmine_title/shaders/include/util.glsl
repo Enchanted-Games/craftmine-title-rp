@@ -3,3 +3,10 @@ vec4 sample1PanoramaFace(samplerCube cubeSampler, vec2 uv) {
     vec3 viewFromUV = vec3(-uvminus1to1.x, uvminus1to1.y, -1.0);
     return texture(cubeSampler, viewFromUV);
 }
+
+bool rougheq(vec4 color, vec4 target) {
+    return all(lessThan(abs(color-target),vec4(0.001)));
+}
+bool rougheq(vec3 color, vec3 target) {
+    return all(lessThan(abs(color-target),vec3(0.001)));
+}

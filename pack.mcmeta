@@ -31,7 +31,19 @@
       { "text": "n", "color": "#006000" },
       "\n",
       {
-        "text": "v1.0 | by Enchanted_Games"
+        "text": "v1.1 | by Enchanted_Games"
+      }
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "1_21_5_compat",
+        "formats": [55, 56]
+      },
+      {
+        "directory": "1_21_6_above_compat",
+        "formats": [60, 60]
       }
     ]
   }

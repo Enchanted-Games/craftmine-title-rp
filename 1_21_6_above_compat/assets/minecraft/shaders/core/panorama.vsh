@@ -7,12 +7,11 @@
 in vec3 Position;
 out vec3 texCoord0;
 
-out vec4 glPos;
+out float rot;
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
-    glPos = ProjMat * ModelViewMat * vec4(Position, 1.0);
+    texCoord0 = Position;
 
-    float aspect = ScreenSize.x / ScreenSize.y;
-    texCoord0 = (ProjMat * vec4(Position * aspect, 1.0)).xyz;
+    rot = atan(ModelViewMat[0][2], ModelViewMat[0][0]);
 }

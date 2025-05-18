@@ -1,7 +1,7 @@
 {
   "pack": {
     "pack_format": 55,
-    "supported_formats": [55, 60],
+    "supported_formats": [55, 61],
     "description": [
       "",
       { "text": "2", "color": "#ffffff" },
@@ -40,10 +40,6 @@
       {
         "directory": "1_21_5_compat",
         "formats": [55, 56]
-      },
-      {
-        "directory": "1_21_6_above_compat",
-        "formats": [60, 60]
       }
     ]
   }

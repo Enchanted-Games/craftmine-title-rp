@@ -1,12 +1,8 @@
 # Craftmine Title
 
-Craftmine Title is a fairly simple resourcepack that backports (or 'frontports'?) the matrix code title screen from 25w14craftmine to 1.21.5. It also includes the logo and splash texts from that version!
+Craftmine Title is a fairly simple resourcepack that ports the matrix code title screen from 25w14craftmine to newer versions. It also includes the logo and splash texts from that version!
 
 When using this pack, you can adjust the speed of the matrix code by changing the "Panorama Scroll Speed" accessibility setting. It is recommended to set this to 20% for the intended animation speed.
-
-## Compatability
-
-This resourcepack uses core shaders and should work on all devices as it does not use any extra "unsupported" uniforms. However, if it doesn't work on your device please let me know!
 
 ## License
 

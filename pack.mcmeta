@@ -1,7 +1,7 @@
 {
   "pack": {
-    "min_format": 68,
-    "max_format": 78,
+    "min_format": 84,
+    "max_format": 84,
     "description": [
       "",
       { "text": "2", "color": "#ffffff" },
@@ -31,7 +31,7 @@
       { "text": "n", "color": "#006000" },
       "\n",
       {
-        "text": "v1.2.3 | by "
+        "text": "v1.2.4 | by "
       },
       {
         "player": {
